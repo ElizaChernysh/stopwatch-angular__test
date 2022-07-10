@@ -1,0 +1,31 @@
+<div class="main-container">
+  <header>
+    <h1 class="title">Stopwatch</h1>
+  </header>
+
+  <main>
+    <div class="stopwatch-wrapper">
+      <p>{{stopwatch.minutes}}</p> <span>m</span>
+      <p>{{stopwatch.seconds}}</p> <span>s</span>
+    </div>
+    <button (click)="startCount()" *ngIf="startBtn">Start</button>
+
+    <div *ngIf="!startBtn">
+      <button (click)="stopTimer()">
+        Stop
+      </button>
+      <button (click)="dbClickCheck()" #dbClick>
+        Wait
+      </button>
+      <button (click)="resetTimer()">
+        Reset
+      </button>
+    </div>
+    <div class="notification">{{stopwatch.mainNotification}}</div>
+    <img
+      class="image"
+      src="https://i.gifer.com/origin/84/84d79f587caeee69caf306386ec3527d_w200.gif"
+      alt="Walking"
+    />
+  </main>
+</div>
