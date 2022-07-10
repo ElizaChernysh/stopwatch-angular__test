@@ -3,7 +3,8 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "stopwatch-test": {
+    "
+stopwatch-angular__test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +18,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/stopwatch-test",
+            "outputPath": "dist/
+stopwatch-angular__test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +71,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "stopwatch-test:build:production"
+              "browserTarget": "
+stopwatch-angular__test:build:production"
             },
             "development": {
-              "browserTarget": "stopwatch-test:build:development"
+              "browserTarget": "
+stopwatch-angular__test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +84,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "stopwatch-test:build"
+            "browserTarget": "
+stopwatch-angular__test:build"
           }
         },
         "test": {

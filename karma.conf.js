@@ -25,7 +25,8 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/stopwatch-test'),
+      dir: require('path').join(__dirname, './coverage/
+stopwatch-angular__test'),
       subdir: '.',
       reporters: [
         { type: 'html' },
